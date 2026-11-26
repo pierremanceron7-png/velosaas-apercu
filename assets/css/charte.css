@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Charte « Atelier » — la même que le logiciel (DOSSIER-DE-DEPART.md § 7)
+   Toutes les couleurs du site viennent d'ici : changer une valeur la change partout.
+   ========================================================================== */
+
+/* DM Sans, hébergée sur le site (aucun appel à Google Fonts) — licence OFL, voir polices/ */
+@font-face {
+  font-family: "DM Sans";
+  src: url("../polices/dm-sans-latin-wght-normal.woff2") format("woff2-variations"),
+       url("../polices/dm-sans-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Couleurs de la charte */
+  --creme: #FAF6EF;            /* fond */
+  --blanc: #FFFFFF;            /* cartes */
+  --bordure: #ECE2D3;          /* bordures */
+  --texte: #1F2A25;            /* texte */
+  --texte-secondaire: #69716B; /* texte secondaire */
+  --sapin: #1F4D3F;            /* couleur principale (texte blanc dessus) */
+  --sur-sapin: #FFFFFF;
+
+  /* Nuances dérivées de la charte */
+  --sapin-fonce: #163A2F;
+  --sapin-nuit: #10291F;
+  --sapin-clair: #DCE8E1;
+  --sapin-voile: #EEF4F0;
+  --creme-fonce: #F4EDE2;
+  --sable: #E5D9C6;
+  --bordure-forte: #DCCDB7;
+  /* Tons chauds repris des badges du logiciel (« Plus que 2 à ce prix ! ») */
+  --peche: #FCEADB;
+  --peche-texte: #94451A;
+
+  /* Formes */
+  --rayon-carte: 18px;
+  --rayon-moyen: 12px;
+  --rayon-pilule: 999px;
+
+  /* Typographie */
+  --police: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Ombres */
+  --ombre-douce: 0 1px 2px rgb(31 42 37 / 0.04), 0 6px 18px -6px rgb(31 42 37 / 0.10);
+  --ombre-carte: 0 1px 2px rgb(31 42 37 / 0.05), 0 12px 32px -12px rgb(31 42 37 / 0.16);
+  --ombre-forte: 0 2px 6px rgb(31 42 37 / 0.05), 0 32px 80px -24px rgb(31 42 37 / 0.32);
+
+  /* Mise en page */
+  --largeur: 1200px;
+  --hauteur-entete: 68px;
+}

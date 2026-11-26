@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VéloSaaS · Le logiciel des loueurs de vélos</title>
+  <meta name="description" content="Le logiciel tout-en-un des loueurs de vélos : planning, réservations, caisse, atelier et une page de réservation en ligne à leurs couleurs, sans commission sur les locations.">
+  <meta name="theme-color" content="#FAF6EF">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="VéloSaaS">
+  <meta property="og:title" content="VéloSaaS">
+  <meta property="og:description" content="Le logiciel tout-en-un des loueurs de vélos : planning, réservations, caisse, atelier et une page de réservation en ligne à leurs couleurs, sans commission sur les locations.">
+  <link rel="icon" href="/velosaas-apercu/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/velosaas-apercu/assets/polices/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/velosaas-apercu/assets/css/charte.css">
+  <link rel="stylesheet" href="/velosaas-apercu/assets/css/site.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="/velosaas-apercu/assets/js/site.js" defer></script>
+</head>
+<body class="page-accueil">
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete" data-entete>
+  <div class="conteneur entete__interieur">
+    <a class="logo" href="/velosaas-apercu/" aria-label="VéloSaaS, accueil">
+      <span class="logo__pastille"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="18.5" cy="17.5" r="3.5" /> <circle cx="5.5" cy="17.5" r="3.5" /> <circle cx="15" cy="5" r="1" /> <path d="M12 17.5V14l-3-3 4-3 2 3h2" /> </svg></span>
+      <span class="logo__nom">VéloSaaS</span>
+    </a>
+
+    <nav class="menu-principal" aria-label="Menu principal">
+      
+        <a href="/velosaas-apercu/fonctionnalites/">Fonctionnalités</a>
+      
+        <a href="/velosaas-apercu/tarifs/">Tarifs</a>
+      
+        <a href="/velosaas-apercu/#questions">Questions</a>
+      
+    </nav>
+
+    <div class="entete__actions">
+      <a class="lien-discret entete__essai" href="https://velosaas.onrender.com/book/velodea" target="_blank" rel="noopener">
+        Réservation en ligne <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7 7h10v10" /> <path d="M7 17 17 7" /> </svg><span class="visuellement-cache"> (démonstration, nouvel onglet)</span>
+      </a>
+      <a class="bouton bouton--principal bouton--petit" href="/velosaas-apercu/demo/">Demander une démo</a>
+      <button class="bouton-menu" type="button" popovertarget="menu-mobile" aria-label="Ouvrir le menu">
+        <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M4 5h16" /> <path d="M4 12h16" /> <path d="M4 19h16" /> </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="menu-mobile" id="menu-mobile" popover aria-label="Menu">
+    <div class="menu-mobile__haut">
+      <span class="logo"><span class="logo__pastille"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="18.5" cy="17.5" r="3.5" /> <circle cx="5.5" cy="17.5" r="3.5" /> <circle cx="15" cy="5" r="1" /> <path d="M12 17.5V14l-3-3 4-3 2 3h2" /> </svg></span><span class="logo__nom">VéloSaaS</span></span>
+      <button class="bouton-menu" type="button" popovertarget="menu-mobile" popovertargetaction="hide" aria-label="Fermer le menu">
+        <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M18 6 6 18" /> <path d="m6 6 12 12" /> </svg>
+      </button>
+    </div>
+    <ul>
+      <li><a href="/velosaas-apercu/">Accueil</a></li>
+      
+        <li><a href="/velosaas-apercu/fonctionnalites/">Fonctionnalités</a></li>
+      
+        <li><a href="/velosaas-apercu/tarifs/">Tarifs</a></li>
+      
+        <li><a href="/velosaas-apercu/#questions">Questions</a></li>
+      
+      <li><a href="https://velosaas.onrender.com/book/velodea" target="_blank" rel="noopener">Essayer la réservation en ligne <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7 7h10v10" /> <path d="M7 17 17 7" /> </svg></a></li>
+    </ul>
+    <a class="bouton bouton--principal bouton--large" href="/velosaas-apercu/demo/">Demander une démo</a>
+  </nav>
+</header>
+
+  <main id="contenu">
+    
+
+
+<section class="heros">
+  <div class="heros__fond" aria-hidden="true"></div>
+  <div class="conteneur">
+    <div class="heros__texte">
+      <span class="pastille"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="18.5" cy="17.5" r="3.5" /> <circle cx="5.5" cy="17.5" r="3.5" /> <circle cx="15" cy="5" r="1" /> <path d="M12 17.5V14l-3-3 4-3 2 3h2" /> </svg> Le logiciel des loueurs de vélos</span>
+      <h1>Louez plus de vélos,<br class="saut-large"> passez <span class="souligne">moins de temps</span><br class="saut-large"> au comptoir.</h1>
+      <p class="chapeau">Planning, réservations, caisse, atelier et une page de réservation en ligne à vos couleurs, réunis dans un seul logiciel. Sans commission sur vos locations.</p>
+      <div class="groupe-boutons">
+        <a class="bouton bouton--principal bouton--grand" href="/velosaas-apercu/demo/">Demander une démo <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></a>
+        <a class="bouton bouton--secondaire bouton--grand" href="https://velosaas.onrender.com/book/velodea" target="_blank" rel="noopener">Essayer la réservation en ligne <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7 7h10v10" /> <path d="M7 17 17 7" /> </svg><span class="visuellement-cache"> (démonstration, nouvel onglet)</span></a>
+      </div>
+      <ul class="garanties">
+        <li><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg> Aucune commission sur vos locations</li>
+        <li><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg> Rien à installer</li>
+        <li><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg> Pensé pour la location de vélos</li>
+      </ul>
+    </div>
+
+    <div class="heros__visuel">
+      <figure class="ecran heros__ecran">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Tableau de bord</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/tableau-de-bord-1500.webp"
+      srcset="/velosaas-apercu/assets/images/captures/tableau-de-bord-800.webp 800w, /velosaas-apercu/assets/images/captures/tableau-de-bord-1500.webp 1500w" sizes="(min-width: 1200px) 1100px, 92vw"
+      width="1500" height="545"
+      alt="Tableau de bord du logiciel : réservations à confirmer, départs et retours du jour, et planning de la semaine par contrat." loading="eager" decoding="async" fetchpriority="high">
+  </figure>
+
+      <figure class="telephone heros__telephone">
+    <img src="/velosaas-apercu/assets/images/captures/telephone-390.webp" width="390" height="844" alt="La page de réservation en ligne sur un téléphone : choix des dates sur un agenda et panier." loading="eager" decoding="async">
+  </figure>
+
+      
+  <div class="puce heros__puce heros__puce--1" aria-hidden="true">
+    <span class="puce__icone"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /> </svg></span>
+    <span class="puce__texte"><strong>Caution reçue</strong><span>600,00 € · empreinte bancaire</span></span>
+  </div>
+
+      
+  <div class="puce puce--chaude heros__puce heros__puce--2" aria-hidden="true">
+    <span class="puce__icone"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" /> </svg></span>
+    <span class="puce__texte"><strong>Plus que 1 à ce prix,</strong><span>dépêchez-vous !</span></span>
+  </div>
+
+      
+  <div class="puce heros__puce heros__puce--3" aria-hidden="true">
+    <span class="puce__icone"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" /> <path d="M3 21h18" /> </svg></span>
+    <span class="puce__texte"><strong>Contrat signé</strong><span>avant l&#39;arrivée au magasin</span></span>
+  </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--creme-fonce">
+  <div class="conteneur">
+    
+  <div class="titre-section " data-apparition>
+    <p class="surtitre">Le quotidien d&#39;un loueur</p>
+    <h2>Vous vous reconnaissez ?</h2>
+    <p class="chapeau">Les outils habituels ne sont pas faits pour la location de vélos. VéloSaaS part de votre métier : vos vélos, vos formules, vos horaires.</p>
+  </div>
+
+
+    <div class="duos">
+      
+      
+        <article class="duo" data-apparition style="--delai: 0s">
+          <div class="duo__avant">
+            <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" /> <path d="M2 6h4" /> <path d="M2 10h4" /> <path d="M2 14h4" /> <path d="M2 18h4" /> <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /> </svg></span>
+            <p><span class="duo__etiquette">Aujourd'hui</span>Le planning tient sur un cahier ou un tableur : doubles réservations, vélos « perdus », appels pour savoir ce qui est libre.</p>
+          </div>
+          <div class="duo__avec">
+            <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>
+            <p><span class="duo__etiquette">Avec VéloSaaS</span>Un planning à jour en direct, par vélo ou par contrat : vous voyez d&#39;un coup d&#39;œil ce qui est libre.</p>
+          </div>
+        </article>
+      
+        <article class="duo" data-apparition style="--delai: 0.08s">
+          <div class="duo__avant">
+            <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <line x1="19" x2="5" y1="5" y2="19" /> <circle cx="6.5" cy="6.5" r="2.5" /> <circle cx="17.5" cy="17.5" r="2.5" /> </svg></span>
+            <p><span class="duo__etiquette">Aujourd'hui</span>La réservation en ligne est un outil à part, qui prend une commission et ne connaît pas vos vrais stocks.</p>
+          </div>
+          <div class="duo__avec">
+            <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>
+            <p><span class="duo__etiquette">Avec VéloSaaS</span>Votre propre page de réservation, branchée sur vos vrais stocks, sans aucune commission.</p>
+          </div>
+        </article>
+      
+        <article class="duo" data-apparition style="--delai: 0.16s">
+          <div class="duo__avant">
+            <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /> </svg></span>
+            <p><span class="duo__etiquette">Aujourd'hui</span>Cautions papier, chèques de caution, retards et réparations gérés « de tête ».</p>
+          </div>
+          <div class="duo__avec">
+            <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>
+            <p><span class="duo__etiquette">Avec VéloSaaS</span>Caution par empreinte bancaire ou mandat SEPA, contrat signé en ligne, atelier intégré.</p>
+          </div>
+        </article>
+      
+        <article class="duo" data-apparition style="--delai: 0.24s">
+          <div class="duo__avant">
+            <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="10" /> <path d="M12 6v6l4 2" /> </svg></span>
+            <p><span class="duo__etiquette">Aujourd'hui</span>Les outils génériques comptent en tranches de 24 h, alors qu&#39;une location va d&#39;une ouverture à une fermeture.</p>
+          </div>
+          <div class="duo__avec">
+            <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>
+            <p><span class="duo__etiquette">Avec VéloSaaS</span>Vos formules (journée, 5 jours, mois, année) et vos horaires d&#39;ouverture, tels quels.</p>
+          </div>
+        </article>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="atouts">
+  <div class="conteneur">
+
+    <article class="atout">
+      <div class="atout__texte" data-apparition>
+        <span class="atout__numero">01</span>
+        <p class="surtitre">Réservation en ligne</p>
+        <h2>Une boutique en ligne à vos couleurs, sans commission</h2>
+        <p class="chapeau">Vos clients réservent sur une page à votre image : votre logo, vos photos, votre texte, vos tarifs. Les stocks sont ceux de votre planning, en temps réel.</p>
+        <ul class="liste-coches">
+          <li>Des disponibilités réelles, avec des messages qui donnent envie : « Plus que 2 à ce prix ! »</li>
+          <li>Des dates choisies sur un agenda, ou une formule longue durée</li>
+          <li>Le paiement par carte arrive directement sur votre compte (Stripe)</li>
+          <li>Aucune commission sur vos locations</li>
+        </ul>
+      </div>
+      <div class="atout__visuel" data-apparition style="--delai: .1s">
+        <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Votre page de réservation</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/disponibilites-1180.webp"
+      srcset="/velosaas-apercu/assets/images/captures/disponibilites-800.webp 800w, /velosaas-apercu/assets/images/captures/disponibilites-1180.webp 1180w" sizes="(min-width: 1200px) 1100px, 92vw"
+      width="1180" height="945"
+      alt="Page de réservation en ligne : cartes des vélos avec leur prix et leurs disponibilités, et agenda pour choisir ses dates." loading="lazy" decoding="async">
+  </figure>
+
+        
+  <div class="puce atout__puce-bas-gauche" aria-hidden="true">
+    <span class="puce__icone"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="20" height="14" x="2" y="5" rx="2" /> <line x1="2" x2="22" y1="10" y2="10" /> <path d="M6 14h2" /> </svg></span>
+    <span class="puce__texte"><strong>Paiement par carte</strong><span>versé directement sur votre compte</span></span>
+  </div>
+
+      </div>
+    </article>
+
+    <article class="atout atout--inverse">
+      <div class="atout__texte" data-apparition>
+        <span class="atout__numero">02</span>
+        <p class="surtitre">Caution et contrat</p>
+        <h2>Caution et contrat, sans un papier</h2>
+        <p class="chapeau">Le client accepte vos conditions et signe au doigt sur son téléphone avant de venir. La caution est prise automatiquement. Au comptoir, il ne reste qu'à remettre les vélos.</p>
+        <ul class="liste-coches">
+          <li>Empreinte bancaire posée automatiquement le matin du départ (jusqu'à 5 jours), ou mandat SEPA</li>
+          <li>Rien n'est débité, sauf dégâts ou retard</li>
+          <li>Contrat signé en ligne avant de venir, ou au comptoir</li>
+          <li>Confirmation, contrat signé et factures envoyés par email</li>
+        </ul>
+      </div>
+      <div class="atout__visuel" data-apparition style="--delai: .1s">
+        <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Signature du contrat</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/signature-808.webp"
+      
+      width="808" height="722"
+      alt="Signature d&#39;un contrat de location : conditions générales acceptées, nom du signataire et signature tracée au doigt." loading="lazy" decoding="async">
+  </figure>
+
+        
+  <div class="puce puce--sapin atout__puce-haut-droite" aria-hidden="true">
+    <span class="puce__icone"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /> </svg></span>
+    <span class="puce__texte"><strong>Caution reçue de 600,00 €</strong><span>empreinte bancaire enregistrée</span></span>
+  </div>
+
+      </div>
+    </article>
+
+    <article class="atout">
+      <div class="atout__texte" data-apparition>
+        <span class="atout__numero">03</span>
+        <p class="surtitre">Planning</p>
+        <h2>Un planning qui travaille pour vous</h2>
+        <p class="chapeau">Jour, semaine, mois : par vélo ou par contrat, tout tient sur un écran. À chaque réservation, le logiciel choisit le vélo qui remplit le mieux les trous et garde de longues périodes libres.</p>
+        <ul class="liste-coches">
+          <li>Les départs, les retours et les réservations à confirmer dès l'ouverture</li>
+          <li>Les vélos libres par catégorie, jour par jour</li>
+          <li>Le stock de chaque agence, d'un coup d'œil</li>
+        </ul>
+      </div>
+      <div class="atout__visuel" data-apparition style="--delai: .1s">
+        <div class="atout__pile">
+          <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Planning</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/planning-1500.webp"
+      srcset="/velosaas-apercu/assets/images/captures/planning-800.webp 800w, /velosaas-apercu/assets/images/captures/planning-1500.webp 1500w" sizes="(min-width: 1200px) 640px, 92vw"
+      width="1500" height="488"
+      alt="Planning par vélo sur une semaine : nombre de vélos libres par catégorie et par jour, et locations en cours." loading="lazy" decoding="async">
+  </figure>
+
+          <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Stock par agence</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/stock-agences-1500.webp"
+      srcset="/velosaas-apercu/assets/images/captures/stock-agences-800.webp 800w, /velosaas-apercu/assets/images/captures/stock-agences-1500.webp 1500w" sizes="(min-width: 1200px) 460px, 92vw"
+      width="1500" height="452"
+      alt="Stock par agence et par catégorie, jour par jour, avec le total de toutes les agences." loading="lazy" decoding="async">
+  </figure>
+
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<section class="section section--blanche visite" id="visite">
+  <div class="conteneur">
+    
+  <div class="titre-section " data-apparition>
+    <p class="surtitre">Visite du logiciel</p>
+    <h2>Tout le comptoir, dans un seul outil</h2>
+    <p class="chapeau">Les vrais écrans du logiciel, avec des données de démonstration.</p>
+  </div>
+
+
+    
+
+    <div class="onglets" role="tablist" aria-label="Écrans du logiciel" data-onglets>
+      
+        <button class="onglet" type="button" role="tab" id="onglet-tableau" aria-controls="panneau-tableau" aria-selected="true"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="7" height="9" x="3" y="3" rx="1" /> <rect width="7" height="5" x="14" y="3" rx="1" /> <rect width="7" height="9" x="14" y="12" rx="1" /> <rect width="7" height="5" x="3" y="16" rx="1" /> </svg> Tableau de bord</button>
+      
+        <button class="onglet" type="button" role="tab" id="onglet-comptoir" aria-controls="panneau-comptoir" aria-selected="false"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5" /> <path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244" /> <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05" /> </svg> Réservation au comptoir</button>
+      
+        <button class="onglet" type="button" role="tab" id="onglet-location" aria-controls="panneau-location" aria-selected="false"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /> </svg> Une location</button>
+      
+        <button class="onglet" type="button" role="tab" id="onglet-caisse" aria-controls="panneau-caisse" aria-selected="false"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M13 16H8" /> <path d="M14 8H8" /> <path d="M16 12H8" /> <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" /> </svg> Caisse</button>
+      
+        <button class="onglet" type="button" role="tab" id="onglet-statistiques" aria-controls="panneau-statistiques" aria-selected="false"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="M18 17V9" /> <path d="M13 17V5" /> <path d="M8 17v-3" /> </svg> Statistiques</button>
+      
+        <button class="onglet" type="button" role="tab" id="onglet-atelier" aria-controls="panneau-atelier" aria-selected="false"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" /> </svg> Atelier</button>
+      
+        <button class="onglet" type="button" role="tab" id="onglet-sombre" aria-controls="panneau-sombre" aria-selected="false"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 2v2" /> <path d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715" /> <path d="M16 12a4 4 0 0 0-4-4" /> <path d="m19 5-1.256 1.256" /> <path d="M20 12h2" /> </svg> Mode sombre</button>
+      
+    </div>
+
+    
+      <div class="panneau" role="tabpanel" id="panneau-tableau" aria-labelledby="onglet-tableau" tabindex="0">
+        <div class="panneau__texte">
+          <h3>Votre journée, dès l&#39;ouverture</h3>
+          <p>Réservations à confirmer, départs et retours du jour, et toute la semaine en un coup d&#39;œil, par contrat ou par vélo.</p>
+          <ul class="liste-coches">
+            <li>Mis à jour en direct</li><li>Vue jour ou semaine</li>
+          </ul>
+        </div>
+        <div class="panneau__visuel">
+          <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Tableau de bord</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/tableau-de-bord-1500.webp"
+      srcset="/velosaas-apercu/assets/images/captures/tableau-de-bord-800.webp 800w, /velosaas-apercu/assets/images/captures/tableau-de-bord-1500.webp 1500w" sizes="(min-width: 1200px) 720px, 92vw"
+      width="1500" height="545"
+      alt="Tableau de bord : 3 réservations à confirmer, 1 départ et 0 retour aujourd&#39;hui, planning de la semaine." loading="lazy" decoding="async">
+  </figure>
+
+        </div>
+      </div>
+    
+      <div class="panneau" role="tabpanel" id="panneau-comptoir" aria-labelledby="onglet-comptoir" tabindex="0">
+        <div class="panneau__texte">
+          <h3>Une réservation en trois étapes</h3>
+          <p>Le client, les dates, les vélos. Le logiciel affiche les vélos libres et le bon tarif ; vous gardez la main sur le prix.</p>
+          <ul class="liste-coches">
+            <li>Tarif plein ou réduit</li><li>Vélos choisis automatiquement ou à la main</li><li>Prix modifiable au comptoir</li>
+          </ul>
+        </div>
+        <div class="panneau__visuel panneau__visuel--centre">
+          <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Réservation au comptoir</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/nouvelle-reservation-948.webp"
+      
+      width="948" height="936"
+      alt="Fenêtre de nouvelle réservation : client, durée et dates, choix des vélos par catégorie avec les vélos libres." loading="lazy" decoding="async">
+  </figure>
+
+        </div>
+      </div>
+    
+      <div class="panneau" role="tabpanel" id="panneau-location" aria-labelledby="onglet-location" tabindex="0">
+        <div class="panneau__texte">
+          <h3>Toute la location au même endroit</h3>
+          <p>Paiement, caution, contrat à faire signer ou à envoyer, documents joints : tout est dans le même panneau.</p>
+          <ul class="liste-coches">
+            <li>Reste à payer toujours visible</li><li>Contrat à imprimer, envoyer ou faire signer</li><li>Documents joints (état des lieux…)</li>
+          </ul>
+        </div>
+        <div class="panneau__visuel panneau__visuel--centre">
+          <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Une location</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/detail-location-480.webp"
+      
+      width="480" height="950"
+      alt="Panneau d&#39;une location : total, payé, reste à payer, caution, client, vélos, dates, paiements et contrat." loading="lazy" decoding="async">
+  </figure>
+
+        </div>
+      </div>
+    
+      <div class="panneau" role="tabpanel" id="panneau-caisse" aria-labelledby="onglet-caisse" tabindex="0">
+        <div class="panneau__texte">
+          <h3>Un journal de caisse inaltérable</h3>
+          <p>Chaque écriture est numérotée et scellée : elle ne se modifie ni ne se supprime. L&#39;intégrité du journal se vérifie en un clic.</p>
+          <ul class="liste-coches">
+            <li>Cautions comptées à part, hors chiffre d&#39;affaires</li><li>Export Excel</li>
+          </ul>
+        </div>
+        <div class="panneau__visuel">
+          <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Caisse</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/caisse-1500.webp"
+      srcset="/velosaas-apercu/assets/images/captures/caisse-800.webp 800w, /velosaas-apercu/assets/images/captures/caisse-1500.webp 1500w" sizes="(min-width: 1200px) 720px, 92vw"
+      width="1500" height="430"
+      alt="Journal de caisse : total encaissé, carte bancaire, cautions reçues, et liste des écritures numérotées." loading="lazy" decoding="async">
+  </figure>
+
+        </div>
+      </div>
+    
+      <div class="panneau" role="tabpanel" id="panneau-statistiques" aria-labelledby="onglet-statistiques" tabindex="0">
+        <div class="panneau__texte">
+          <h3>Vous savez ce qui marche</h3>
+          <p>Recettes par mois, par durée de location et par catégorie de vélo, recette moyenne, jours-vélos.</p>
+          <ul class="liste-coches">
+            <li>Par mois, par formule, par catégorie</li><li>Export Excel</li>
+          </ul>
+        </div>
+        <div class="panneau__visuel">
+          <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Statistiques</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/statistiques-1500.webp"
+      srcset="/velosaas-apercu/assets/images/captures/statistiques-800.webp 800w, /velosaas-apercu/assets/images/captures/statistiques-1500.webp 1500w" sizes="(min-width: 1200px) 720px, 92vw"
+      width="1500" height="598"
+      alt="Statistiques : recettes TTC, nombre de vélos sortis, recette moyenne, graphique des recettes par mois." loading="lazy" decoding="async">
+  </figure>
+
+        </div>
+      </div>
+    
+      <div class="panneau" role="tabpanel" id="panneau-atelier" aria-labelledby="onglet-atelier" tabindex="0">
+        <div class="panneau__texte">
+          <h3>L&#39;atelier, relié au planning</h3>
+          <p>Un bon de réparation avec pièces et main-d&#39;œuvre. Le vélo en réparation n&#39;est plus proposé à la location.</p>
+          <ul class="liste-coches">
+            <li>Pièces détachées par famille de vélo</li><li>Réparation facturable au client ou interne</li>
+          </ul>
+        </div>
+        <div class="panneau__visuel panneau__visuel--centre">
+          <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Atelier</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/atelier-808.webp"
+      
+      width="808" height="708"
+      alt="Fenêtre de nouvelle réparation : vélo, pièces détachées, main-d&#39;œuvre et total." loading="lazy" decoding="async">
+  </figure>
+
+        </div>
+      </div>
+    
+      <div class="panneau" role="tabpanel" id="panneau-sombre" aria-labelledby="onglet-sombre" tabindex="0">
+        <div class="panneau__texte">
+          <h3>Clair ou sombre, à votre goût</h3>
+          <p>Le logiciel s&#39;utilise dans le navigateur, sur ordinateur, tablette et téléphone, en mode clair ou sombre.</p>
+          <ul class="liste-coches">
+            <li>Rien à installer</li><li>Entièrement en français</li>
+          </ul>
+        </div>
+        <div class="panneau__visuel">
+          <figure class="ecran ">
+    <div class="ecran__barre" aria-hidden="true">
+      <span class="ecran__points"><i></i><i></i><i></i></span>
+      <span class="ecran__titre">Mode sombre</span>
+    </div>
+    <img
+      src="/velosaas-apercu/assets/images/captures/mode-sombre-1500.webp"
+      srcset="/velosaas-apercu/assets/images/captures/mode-sombre-800.webp 800w, /velosaas-apercu/assets/images/captures/mode-sombre-1500.webp 1500w" sizes="(min-width: 1200px) 720px, 92vw"
+      width="1500" height="645"
+      alt="Le tableau de bord du logiciel en mode sombre." loading="lazy" decoding="async">
+  </figure>
+
+        </div>
+      </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="conteneur">
+    
+  <div class="titre-section " data-apparition>
+    <p class="surtitre">Fonctionnalités</p>
+    <h2>Tout ce qu'une location de vélos demande</h2>
+    <p class="chapeau">Tarifs, agences, saisons, caisse, atelier : chaque besoin du métier a sa place dans le logiciel.</p>
+  </div>
+
+
+    <div class="mosaique">
+      <article class="tuile tuile--large tuile--sapin" data-apparition>
+        <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z" /> <path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193" /> <circle cx="10.5" cy="6.5" r=".5" fill="currentColor" /> </svg></span>
+        <h3>Les vrais tarifs de la location</h3>
+        <p>Forfaits d'un jour, de 5 jours, d'un mois, à l'année. Le logiciel calcule la meilleure combinaison, applique le tarif réduit sur justificatif et vous laisse fixer un prix à la main au comptoir.</p>
+        <div class="tuile__illustration" aria-hidden="true">
+          <div class="formules"><span class="formule">1 jour</span><span class="formule">5 jours</span><span class="formule">1 mois</span><span class="formule">Année</span></div>
+          <div class="calcul">
+            <span>6 jours</span><span class="calcul__signe">=</span>
+            <span class="calcul__bloc">5 jours</span><span class="calcul__signe">+</span><span class="calcul__bloc">1 jour</span>
+            <span class="calcul__note">Meilleure combinaison, calculée automatiquement</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tuile" data-apparition style="--delai: .08s">
+        <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 12h4" /> <path d="M10 8h4" /> <path d="M14 21v-3a2 2 0 0 0-4 0v3" /> <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /> <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /> </svg></span>
+        <h3>Plusieurs agences, une seule flotte</h3>
+        <p>Stock par agence, horaires propres à chacune.</p>
+        <div class="tuile__illustration trajet" aria-hidden="true">
+          <div class="trajet__etape"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /> </svg> <span>Retrait</span> Agence du Lac</div>
+          <div class="trajet__lien"></div>
+          <div class="trajet__etape"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /> </svg> <span>Retour</span> Agence de la Gare</div>
+        </div>
+      </article>
+
+      <article class="tuile" data-apparition>
+        <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M8 2v3" /> <path d="M16 2v3" /> <rect x="3" y="3" width="18" height="18" rx="2" /> <path d="M3 9h18" /> <path d="M8 13h.01" /> <path d="M12 13h.01" /> <path d="M16 13h.01" /> <path d="M8 17h.01" /> <path d="M12 17h.01" /> <path d="M16 17h.01" /> </svg></span>
+        <h3>Saisons et horaires</h3>
+        <p>Saisons d'ouverture, jours fériés, fermetures exceptionnelles, pause de midi : on ne réserve que quand vous êtes ouvert.</p>
+        <div class="tuile__illustration semaine" aria-hidden="true">
+          <b>L</b><b>M</b><b>M</b><b>J</b><b>V</b><b>S</b><b>D</b>
+          <i>1</i><i>2</i><i>3</i><i class="ferie">4</i><i>5</i><i>6</i><i class="ferme">7</i>
+        </div>
+      </article>
+
+      <article class="tuile" data-apparition style="--delai: .08s">
+        <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M13 16H8" /> <path d="M14 8H8" /> <path d="M16 12H8" /> <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" /> </svg></span>
+        <h3>Caisse, factures et avoirs</h3>
+        <p>Journal de caisse inaltérable, factures numérotées à votre modèle avec vos CGL au dos, avoirs, devis pour les entreprises et les collectivités.</p>
+        <div class="tuile__illustration ticket" aria-hidden="true">
+          <div class="ticket__ligne"><span>Encaissement · Carte bancaire</span><b>100,00 €</b></div>
+          <div class="ticket__ligne"><span>Caution reçue · Empreinte CB</span><b>600,00 €</b></div>
+        </div>
+      </article>
+
+      <article class="tuile" data-apparition style="--delai: .16s">
+        <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" /> </svg></span>
+        <h3>Atelier intégré</h3>
+        <p>Pièces détachées, bons de réparation, échange de vélo en panne, vélo de courtoisie, et l'historique complet de chaque vélo.</p>
+        <div class="tuile__illustration ticket" aria-hidden="true">
+          <div class="ticket__ligne"><span>Plaquettes × 2</span><b>36,00 €</b></div>
+          <div class="ticket__ligne"><span>Main-d'œuvre</span><b>25,00 €</b></div>
+          <div class="ticket__ligne ticket__ligne--etat"><span><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" /> </svg> VAE-01</span><b>En réparation</b></div>
+        </div>
+      </article>
+
+      <article class="tuile" data-apparition>
+        <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="M18 17V9" /> <path d="M13 17V5" /> <path d="M8 17v-3" /> </svg></span>
+        <h3>Statistiques</h3>
+        <p>Recettes par mois, par catégorie, par formule, et d'où viennent vos clients. Export Excel.</p>
+        <div class="tuile__illustration barres" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </article>
+
+      <article class="tuile" data-apparition style="--delai: .08s">
+        <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /> <path d="m16 19 2 2 4-4" /> </svg></span>
+        <h3>Emails automatiques</h3>
+        <p>Confirmation, contrat signé, factures, devis et avoirs envoyés en un clic, avec un lien sécurisé vers le document.</p>
+        <div class="tuile__illustration courriels" aria-hidden="true">
+          <div class="courriel"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /> </svg> Confirmation de réservation</div>
+          <div class="courriel"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284" /> <path d="M3 21h18" /> </svg> Contrat signé</div>
+          <div class="courriel"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M13 16H8" /> <path d="M14 8H8" /> <path d="M16 12H8" /> <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" /> </svg> Votre facture</div>
+        </div>
+      </article>
+
+      <article class="tuile" data-apparition style="--delai: .16s">
+        <span class="icone-ronde"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 14v4" /> <path d="M18 5a2 2 0 00-2-2H4a2 2 0 00-2 2v7a2 2 0 002 2h7" /> <path d="M7 18h4" /> <rect x="15" y="9" width="7" height="12" rx="2" /> </svg></span>
+        <h3>Simple, et en français</h3>
+        <p>Sur ordinateur, tablette et téléphone, en mode clair ou sombre. Votre flotte s'importe depuis Excel.</p>
+        <div class="tuile__illustration appareils" aria-hidden="true">
+          <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" /> <path d="M20.054 15.987H3.946" /> </svg><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="16" height="20" x="4" y="2" rx="2" ry="2" /> <line x1="12" x2="12.01" y1="18" y2="18" /> </svg><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="6" y="2" width="12" height="20" rx="2" ry="2" /> <path d="M12 18h.01" /> </svg>
+          <span class="bascule-theme"><span><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.93 4.93 1.41 1.41" /> <path d="m17.66 17.66 1.41 1.41" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.34 17.66-1.41 1.41" /> <path d="m19.07 4.93-1.41 1.41" /> </svg></span><span><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /> </svg></span></span>
+        </div>
+      </article>
+    </div>
+
+    <p class="mosaique__suite"><a class="lien-fleche" href="/velosaas-apercu/fonctionnalites/">Voir toutes les fonctionnalités <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></a></p>
+  </div>
+</section>
+
+
+<section class="section section--serree">
+  <div class="conteneur">
+    <div class="bande-essai" data-apparition>
+      <div class="bande-essai__grille">
+        <div class="bande-essai__texte">
+          <p class="surtitre">À essayer tout de suite</p>
+          <h2>Réservez comme le feront vos clients</h2>
+          <p>Ouvrez la page de réservation d'un magasin de démonstration : choisissez des vélos, des dates, une formule. C'est la page que vos clients verront, à vos couleurs.</p>
+          <a class="bouton bouton--clair bouton--grand" href="https://velosaas.onrender.com/book/velodea" target="_blank" rel="noopener">Ouvrir la page de démonstration <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7 7h10v10" /> <path d="M7 17 17 7" /> </svg><span class="visuellement-cache"> (nouvel onglet)</span></a>
+        </div>
+        <div class="bande-essai__visuel">
+          <figure class="telephone ">
+    <img src="/velosaas-apercu/assets/images/captures/telephone-390.webp" width="390" height="844" alt="La page de réservation en ligne affichée sur un téléphone." loading="lazy" decoding="async">
+  </figure>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="questions">
+  <div class="conteneur conteneur--etroit">
+    
+  <div class="titre-section " data-apparition>
+    <p class="surtitre">Questions fréquentes</p>
+    <h2>Vos questions, nos réponses</h2>
+    
+  </div>
+
+    
+<div class="faq" data-apparition>
+  <details>
+    <summary>Prenez-vous une commission sur mes locations ? <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="M12 5v14" /> </svg></summary>
+    <div class="faq__reponse">
+      <p>Non. VéloSaaS ne prend aucune commission sur vos locations. Quand vos clients paient en ligne par carte, l'argent arrive directement sur votre compte, via Stripe.</p>
+      <p>Les frais de paiement de Stripe s'appliquent, comme pour tout paiement par carte.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Faut-il installer quelque chose ? <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="M12 5v14" /> </svg></summary>
+    <div class="faq__reponse">
+      <p>Non. Le logiciel s'utilise dans le navigateur, sur ordinateur, tablette et téléphone. Il n'y a pas d'application à télécharger.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Puis-je reprendre ma flotte actuelle ? <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="M12 5v14" /> </svg></summary>
+    <div class="faq__reponse">
+      <p>Oui : votre flotte s'importe depuis un fichier Excel.</p>
+    </div>
+  </details>
+  <details>
+    <summary>J'ai plusieurs points de location. Est-ce adapté ? <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="M12 5v14" /> </svg></summary>
+    <div class="faq__reponse">
+      <p>Oui. Chaque agence a son stock et ses horaires, et un client peut retirer ses vélos dans une agence et les rendre dans une autre.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Comment fonctionne la caution ? <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="M12 5v14" /> </svg></summary>
+    <div class="faq__reponse">
+      <p>Une empreinte bancaire est posée automatiquement le matin du départ (jusqu'à 5 jours), ou vous utilisez un mandat SEPA. Rien n'est débité, sauf en cas de dégâts ou de retard.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Combien ça coûte ? <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="M12 5v14" /> </svg></summary>
+    <div class="faq__reponse">
+      <p>Nos tarifs sont communiqués sur demande. <a href="/velosaas-apercu/demo/">Demandez une démo</a> : nous vous présentons le logiciel et ses tarifs.</p>
+    </div>
+  </details>
+</div>
+
+  </div>
+</section>
+
+
+
+  <section class="section appel-final">
+    <div class="conteneur">
+      <div class="appel-final__carte" data-apparition>
+        <div class="appel-final__motif" aria-hidden="true"></div>
+        <h2>Et si on vous montrait le logiciel ?</h2>
+        <p>Présentez-nous votre magasin en quelques lignes : nous vous recontactons pour une démonstration.</p>
+        <div class="groupe-boutons groupe-boutons--centre">
+          <a class="bouton bouton--clair bouton--grand" href="/velosaas-apercu/demo/">Demander une démo <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></a>
+          <a class="bouton bouton--contour-clair bouton--grand" href="https://velosaas.onrender.com/book/velodea" target="_blank" rel="noopener">Essayer la réservation en ligne <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7 7h10v10" /> <path d="M7 17 17 7" /> </svg><span class="visuellement-cache"> (nouvel onglet)</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </main>
+  <footer class="pied">
+  <div class="conteneur pied__grille">
+    <div class="pied__marque">
+      <a class="logo" href="/velosaas-apercu/"><span class="logo__pastille"><svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="18.5" cy="17.5" r="3.5" /> <circle cx="5.5" cy="17.5" r="3.5" /> <circle cx="15" cy="5" r="1" /> <path d="M12 17.5V14l-3-3 4-3 2 3h2" /> </svg></span><span class="logo__nom">VéloSaaS</span></a>
+      <p>Le logiciel tout-en-un des loueurs de vélos, simple et en français.</p>
+    </div>
+    <nav class="pied__colonne" aria-label="Le logiciel">
+      <h2>Le logiciel</h2>
+      <ul>
+        <li><a href="/velosaas-apercu/fonctionnalites/">Fonctionnalités</a></li>
+        <li><a href="/velosaas-apercu/tarifs/">Tarifs</a></li>
+        <li><a href="/velosaas-apercu/#questions">Questions fréquentes</a></li>
+        <li><a href="https://velosaas.onrender.com/book/velodea" target="_blank" rel="noopener">Réservation en ligne (démo) <svg class="icone" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7 7h10v10" /> <path d="M7 17 17 7" /> </svg></a></li>
+      </ul>
+    </nav>
+    <nav class="pied__colonne" aria-label="Contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="/velosaas-apercu/demo/">Demander une démo</a></li>
+        
+      </ul>
+    </nav>
+    <nav class="pied__colonne" aria-label="Informations légales">
+      <h2>Légal</h2>
+      <ul>
+        <li><a href="/velosaas-apercu/mentions-legales/">Mentions légales</a></li>
+        <li><a href="/velosaas-apercu/confidentialite/">Confidentialité</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="conteneur pied__bas">
+    <p>© 2026 VéloSaaS</p>
+    <p>Aucun cookie, aucun traceur publicitaire.</p>
+  </div>
+</footer>
+
+</body>
+</html>
