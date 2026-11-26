@@ -583,52 +583,129 @@ a:hover { text-decoration-thickness: 2px; }
   font-weight: 500;
 }
 .tout-compris__inclus .icone { width: 1em; height: 1em; color: #BFD6CB; stroke-width: 2.4; }
+.tout-compris__inclus .tout-compris__nouveautes { display: flex; align-items: center; gap: 0.5rem; width: 100%; margin-top: 0.25rem; color: rgb(255 255 255 / 0.9); font-size: 1rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+.tout-compris__inclus .tout-compris__nouveautes .icone { width: 1.15em; height: 1.15em; }
 
-/* 6.2 Avant / avec */
-.duos {
+/* 6.2 Illustration « un planning qui s'organise tout seul » (HTML/CSS) */
+.remplissage {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: 0.9rem;
+  margin: 0;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border: 1px solid var(--bordure);
+  border-radius: 24px;
+  background: var(--blanc);
+  box-shadow: var(--ombre-forte);
 }
-.duo {
+.remplissage__cas { padding: 1.1rem 1.2rem 1rem; border-radius: var(--rayon-carte); background: var(--creme); }
+.remplissage__cas--avec { background: var(--sapin-voile); }
+.remplissage__titre {
+  margin-bottom: 0.85rem;
+  color: var(--texte-secondaire);
+  font-size: 0.8125rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.remplissage__cas--avec .remplissage__titre { color: var(--sapin); }
+.remplissage__grille { display: grid; grid-template-columns: 3.6rem minmax(0, 1fr); gap: 0.45rem 0.7rem; align-items: center; }
+.remplissage__velo { color: var(--texte); font-size: 0.8125rem; font-weight: 600; }
+.remplissage__piste {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-columns: repeat(30, minmax(0, 1fr));
+  height: 30px;
+  padding: 3px 0;
+  border-radius: 9px;
+  background-color: var(--blanc);
+  background-image: linear-gradient(90deg, rgb(31 77 63 / 0.07) 1px, transparent 1px);
+  background-size: calc(100% / 30) 100%;
+  box-shadow: inset 0 0 0 1px var(--bordure);
+}
+.remplissage__piste i {
+  grid-row: 1;
+  margin: 0 1px;
+  border: 1px solid #E5B48C;
+  border-radius: 6px;
+  background: var(--peche);
+}
+.remplissage__piste i.remplissage__libre {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--sapin);
+  background: repeating-linear-gradient(135deg, var(--sapin-clair) 0 6px, #CFE1D6 6px 12px);
+  color: var(--sapin-nuit);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 650;
+  white-space: nowrap;
+}
+.remplissage__axe { display: grid; grid-template-columns: repeat(30, minmax(0, 1fr)); }
+.remplissage__axe b { grid-row: 1; color: var(--texte-secondaire); font-size: 0.6875rem; font-weight: 500; }
+.remplissage__verdict { display: flex; align-items: center; gap: 0.55rem; margin-top: 0.8rem; font-size: 0.9rem; font-weight: 600; line-height: 1.35; }
+.remplissage__verdict .icone { width: 22px; height: 22px; padding: 4px; border-radius: 50%; stroke-width: 2.6; }
+.remplissage__verdict--non { color: #8E3A22; }
+.remplissage__verdict--non .icone { background: #F6DDD3; }
+.remplissage__verdict--oui { color: var(--sapin); }
+.remplissage__verdict--oui .icone { background: var(--sapin); color: var(--sur-sapin); }
+
+/* 6.3 bis Tableau « Aujourd'hui / avec » */
+.comparatif {
   overflow: hidden;
   border: 1px solid var(--bordure);
-  border-radius: var(--rayon-carte);
+  border-radius: 24px;
   background: var(--blanc);
-  box-shadow: var(--ombre-douce);
+  box-shadow: var(--ombre-carte);
 }
-.duo__avant {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  padding: 1.6rem 1.6rem 1.4rem;
-  color: var(--texte-secondaire);
-}
-.duo__avant .icone-ronde { background: var(--creme-fonce); color: var(--texte-secondaire); }
-.duo__etiquette {
-  display: block;
-  margin-bottom: 0.3rem;
-  font-size: 0.75rem;
+.comparatif__entete { display: grid; grid-template-columns: 1fr 1fr; }
+.comparatif__entete span {
+  padding: 1rem 1.75rem;
+  font-size: 0.8125rem;
   font-weight: 650;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.duo__avant .duo__etiquette { color: var(--texte-secondaire); }
-.duo__avec {
+.comparatif__entete span:first-child { background: var(--creme); color: var(--texte-secondaire); }
+.comparatif__entete span:last-child { background: var(--sapin); color: var(--sur-sapin); }
+.comparatif__liste { margin: 0; padding: 0; list-style: none; }
+.comparaison { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--bordure); }
+.comparaison p {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  padding: 1.3rem 1.6rem 1.5rem;
-  border-top: 1px dashed var(--bordure-forte);
-  background: linear-gradient(180deg, var(--sapin-voile), rgb(238 244 240 / 0.4));
-  color: var(--texte);
-  font-weight: 500;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+  padding: 1.1rem 1.75rem;
+  font-size: 0.98rem;
+  line-height: 1.5;
 }
-.duo__avec .duo__etiquette { color: var(--sapin); }
-.duo__avec .icone-ronde { background: var(--sapin); color: var(--sur-sapin); }
+.comparaison__avant { background: var(--creme); color: var(--texte-secondaire); }
+.comparaison__avec { background: linear-gradient(90deg, var(--sapin-voile), var(--blanc) 80%); }
+.comparaison__avec strong { color: var(--sapin); font-weight: 650; }
+.comparaison__marque { display: grid; place-items: center; width: 24px; height: 24px; margin-top: 0.05rem; border-radius: 50%; }
+.comparaison__marque .icone { width: 14px; height: 14px; stroke-width: 2.8; }
+.comparaison__avant .comparaison__marque { background: var(--sable); color: var(--texte-secondaire); }
+.comparaison__avec .comparaison__marque { background: var(--sapin); color: var(--sur-sapin); }
+.comparaison:hover .comparaison__avec { background: linear-gradient(90deg, var(--sapin-clair), var(--blanc) 85%); }
+.comparatif__suite summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.1rem;
+  border-top: 1px solid var(--bordure);
+  color: var(--sapin);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.comparatif__suite summary::-webkit-details-marker { display: none; }
+.comparatif__suite summary:hover { background: var(--sapin-voile); }
+.comparatif__suite summary .icone { width: 1.1em; height: 1.1em; transition: transform 0.25s; }
+.comparatif__suite[open] summary .icone { transform: rotate(180deg); }
+.comparatif__fermer, .comparatif__suite[open] .comparatif__ouvrir { display: none; }
+.comparatif__suite[open] .comparatif__fermer { display: inline; }
+.comparatif + .comparatif__note, .comparatif__note { margin-top: 1.25rem; color: var(--texte-secondaire); font-size: 0.9rem; text-align: center; }
 
+/* Pastille d'icône, utilisée partout */
 .icone-ronde {
   display: grid;
   place-items: center;
@@ -1129,6 +1206,8 @@ a:hover { text-decoration-thickness: 2px; }
   padding-top: 1.5rem;
   border-top: 1px solid var(--sapin-clair);
 }
+.tarifs-carte__nouveautes { display: flex; align-items: flex-start; gap: 0.5rem; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--sapin-clair); color: var(--sapin); font-size: 0.95rem; font-weight: 600; }
+.tarifs-carte__nouveautes .icone { width: 1.2em; height: 1.2em; margin-top: 0.1rem; }
 .chiffre-fort strong { white-space: nowrap; color: var(--sapin); font-size: 3rem; font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
 .chiffre-fort span { color: var(--texte-secondaire); font-size: 0.95rem; line-height: 1.35; }
 
@@ -1326,8 +1405,11 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 @media (max-width: 860px) {
-  .duos { grid-template-columns: minmax(0, 1fr); }
   .tout-compris { grid-template-columns: minmax(0, 1fr); }
+  .comparatif__entete { display: none; }
+  .comparaison { grid-template-columns: minmax(0, 1fr); }
+  .comparaison p { padding: 0.95rem 1.25rem; }
+  .comparaison .comparaison__avant { padding-bottom: 0.6rem; }
   .atout, .atout--inverse { grid-template-columns: minmax(0, 1fr); }
   .atout--inverse .atout__texte { order: 0; }
   .panneau { grid-template-columns: minmax(0, 1fr); }
