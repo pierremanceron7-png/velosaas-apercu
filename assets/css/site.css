@@ -514,6 +514,76 @@ a:hover { text-decoration-thickness: 2px; }
 @keyframes puce-entree { from { opacity: 0; transform: translateY(16px) scale(0.95); } }
 @keyframes flotter { 50% { transform: translateY(-7px); } }
 
+/* 6.1 bis Tout compris, un seul prix */
+.tout-compris {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: 2.5rem clamp(2rem, 5vw, 4.5rem);
+  padding: clamp(2.25rem, 5vw, 4rem);
+  overflow: hidden;
+  border-radius: 32px;
+  background: linear-gradient(150deg, var(--sapin) 0%, var(--sapin-nuit) 100%);
+  color: var(--sur-sapin);
+  box-shadow: var(--ombre-forte);
+  isolation: isolate;
+}
+.tout-compris::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(45% 70% at 100% 0%, rgb(255 255 255 / 0.13), transparent 70%),
+    repeating-radial-gradient(circle at 100% 0%, transparent 0 42px, rgb(255 255 255 / 0.04) 42px 43px);
+}
+.tout-compris .surtitre { color: #BFD6CB; }
+.tout-compris h2 { margin-bottom: 1rem; font-size: clamp(2.1rem, 4vw, 3.2rem); }
+.tout-compris .chapeau { margin-bottom: 2rem; color: rgb(255 255 255 / 0.82); }
+.tout-compris__chiffres { display: grid; gap: 0.75rem; }
+.tout-compris__chiffres div {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1rem 1.4rem;
+  border: 1px solid rgb(255 255 255 / 0.14);
+  border-radius: var(--rayon-carte);
+  background: rgb(255 255 255 / 0.06);
+}
+.tout-compris__chiffres strong {
+  min-width: 3.3ch;
+  font-size: clamp(2.4rem, 4vw, 3.1rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  white-space: nowrap;
+}
+.tout-compris__chiffres span { color: rgb(255 255 255 / 0.85); font-size: 1.0625rem; font-weight: 500; line-height: 1.3; }
+.tout-compris__inclus {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgb(255 255 255 / 0.14);
+}
+.tout-compris__inclus p { color: #BFD6CB; font-size: 0.8125rem; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; }
+.tout-compris__inclus ul { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.tout-compris__inclus li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--rayon-pilule);
+  background: rgb(255 255 255 / 0.1);
+  font-size: 0.9063rem;
+  font-weight: 500;
+}
+.tout-compris__inclus .icone { width: 1em; height: 1em; color: #BFD6CB; stroke-width: 2.4; }
+
 /* 6.2 Avant / avec */
 .duos {
   display: grid;
@@ -934,6 +1004,8 @@ a:hover { text-decoration-thickness: 2px; }
 .entete-page h1 { max-width: 900px; margin: 0 auto 1.25rem; font-size: clamp(2.3rem, 5vw, 3.9rem); }
 .entete-page .chapeau { max-width: 660px; margin-inline: auto; }
 .entete-page .groupe-boutons { justify-content: center; margin-top: 2rem; }
+.entete-page__plus { margin-top: 1.6rem; }
+.entete-page__plus .pastille { background: var(--blanc); border: 1px solid var(--bordure); box-shadow: var(--ombre-douce); white-space: normal; }
 
 /* Sous-menu en pilules (page Fonctionnalités) */
 .sous-menu {
@@ -1255,6 +1327,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 @media (max-width: 860px) {
   .duos { grid-template-columns: minmax(0, 1fr); }
+  .tout-compris { grid-template-columns: minmax(0, 1fr); }
   .atout, .atout--inverse { grid-template-columns: minmax(0, 1fr); }
   .atout--inverse .atout__texte { order: 0; }
   .panneau { grid-template-columns: minmax(0, 1fr); }
@@ -1273,6 +1346,9 @@ a:hover { text-decoration-thickness: 2px; }
 @media (max-width: 640px) {
   body { font-size: 1rem; }
   br.saut-large { display: none; }
+  .tout-compris__chiffres div { gap: 0.8rem; padding: 0.85rem 1rem; }
+  .tout-compris__chiffres strong { min-width: 2.6ch; font-size: 2.1rem; }
+  .tout-compris__chiffres span { font-size: 0.98rem; }
   .bouton { white-space: normal; text-align: center; }
   .conteneur, .conteneur--etroit { width: min(100% - 2rem, var(--largeur)); }
   .entete__actions .bouton--petit { display: none; }
